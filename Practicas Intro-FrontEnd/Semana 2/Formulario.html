@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/843c3be67a.js" crossorigin="anonymous"></script>
+    <title>PasteleríaBonita-Formulario</title>
+</head>
+<body>
+    <style>
+        * {
+             background-color: rgb(12, 41, 58); /* Color de fondo */
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        form {
+            margin: 0 auto; /* Centramos el formulario */
+            width: 300px;   /* Sin ancho no podemos centrar el formulario */
+            background-color: rgb(214, 111, 111); /* Color blanco para el formulario */
+            padding: 2px; /* separamos los bordes del form del resto de elementos */
+            border-radius: 10px; /* Redondeamos los bordes del form */
+        }
+
+        label {
+            display: block; /* Ahora los inputs quedan debajo de los label */
+            padding: 5px; /* Separando espacios internos */
+            color: aliceblue;
+        }
+
+        li {
+            margin: 10px; /* dando márgenes a todos los elementos de la lista */
+        }
+
+        .button{
+            margin-top: 20px; /* Damos un margen individual para el contenedor del botón */
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+    </style>
+
+    <!--FORMULARIO-->
+    <div class="content">
+        <div class="contact-wrapper">
+            <h2 class="titulo">Formulario</h2>
+            <div class="contact-form">
+                <form action="formulario.js" method="post">
+                    <div>
+                        <label for="fullname">Nombre completo:</label>
+                        <input type="text" name="fullname" id="fullname" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="email">Correo electronico:</label>
+                        <input type="email" name="email" id="email" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" name="telefono" id="telefono" class="datos" required>
+                    </div>
+                    <div>
+                        <label for="entrega">Fecha de entrega:</label>
+                        <input type="datetime-local" name="entrega" id="entrega" class="datos" required>
+                    </div>
+                    <div class="block">
+                        <label for="descripcion">Descripción, ¿como quieres tu pastel?:</label>
+                        <textarea name="descripcion" id="descripcion" rows="3"></textarea>
+                    </div>
+
+                    <h2 class="titulo block">Sabores</h2>
+                    <div>
+                        <input type="checkbox" name="pastel-aleman" id="aleman" value="pastel-aleman">
+                        <label for="aleman">Vainilla</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="paste- capuchino" id="capuchino" value="pastel-capuchino">
+                        <label for="capuchino">Capuchino</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="paste- tres-leches" id="leches" value="pastel-tres-leches">
+                        <label for="leches">Chocolate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="pastel-queso" id="queso" value="pastel-queso">
+                        <label for="queso">Fresa</label>
+                    </div>
+
+                    <h2 class="titulo block">Adornos</h2>
+                    <div>
+                        <input type="checkbox" name="decoracion-geometrica" id="geometrica">
+                        <label for="geometrica">Sencillo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="decoracion-drip-cake" id="drip-cake">
+                        <label for="drip-cake">Drip cake</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="decoracion-vela-tradicional" id="tradicional">
+                        <label for="tradicional">Tradicional</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="decoracion-vela-numerica" id="numerica">
+                        <label for="numerica">Emojis</label>
+                    </div>
+
+                    <div>
+                        <button type="submit">enviar</button>
+                    </div>
+                    <div>
+                        <button type="reset">borrar</button>
+                    </div>
+                </form>
+                <div class="Contacto">
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Dirección: Av. Granjas #9876</li>
+                        <li><i class="fa-solid fa-phone"></i>Telefono: (+52) 5551525354</li>
+                        <li><i class="fa-solid fa-calendar-days"></i> Horario: Lunes a Sabado de 9:00 am a 18:00 pm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
